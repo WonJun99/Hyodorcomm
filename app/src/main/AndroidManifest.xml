@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication">
+        <activity android:name=".BulletinBoard.TransferActivity"></activity>
+        <activity android:name=".BulletinBoard.ReturnActivity" />
+        <activity android:name=".BulletinBoard.NewActivity" />
+        <activity android:name=".Activity.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.RegisterActivity" />
+        <activity android:name=".Activity.MainActivity" />
+        <activity android:name=".Activity.MemberinitActivity" />
+        <activity android:name=".BulletinBoard.NewWriteActivity" />
+        <activity android:name=".BulletinBoard.ReturnWriteActivity" />
+        <activity android:name=".BulletinBoard.TransferWriteActivity" />
+        <activity android:name=".Activity.GalleryActivity" />
+        <activity android:name=".Activity.PostActivity" />
+    </application>
+
+</manifest>

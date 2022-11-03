@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="#FF0000">
+
+    <include
+        layout="@layout/view_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_below="@+id/toolbar">
+
+            <EditText
+                android:id="@+id/bulbEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="제목"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/bulbEditText2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:ems="10"
+                android:gravity="top"
+                android:hint="내용"
+                android:inputType="textMultiLine" />
+
+            <Button
+                android:id="@+id/btn_bulbupload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#B3B2B2"
+                android:text="확인"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/contentsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:lineSpacingExtra="10dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:text="*문의 접수 전 해당 내용을 확인해주세요*\n1. 해당 페이지는 궁금하신 점이나 개선 및 불평사항들을 접수하는 페이지 입니다.
+                    \n2. 신고를 원하시는 경우 메인 화면에 신고 버튼을 눌러 신고 접수를 해주시길 바랍니다.
+                    \n3. 욕설 및 비하발언 등 문의 사항과 관련없는 내용들은 자동으로 접수가 취소 됩니다.
+                    \n- 욕설/비하발언/인격모독 등 수위가 심할 경우 금지사항 기준에 근거 형사 처벌을 받을 수도 있습니다.
+                    \n4. 접수하신 문의사항은 확인 후 빠른 시일내에 이메일을 통해 답변을 드리겠습니다."/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+</RelativeLayout>
